@@ -11,19 +11,13 @@ Symbols can be further classified as either *terminal* or *non-terminal* based o
 ### Example Grammar
 For a game specific example, Kybartas (2017) proposes an example grammar for the generation of side quests - this is shown below whereby the symbol '→' is indicative of a transformational re-write rule.
 
-<p align="center">
-
 [Journey] → [Journey] [Encounter]
 
 [Encounter] → [Encounter] [Encounter]
 
 [Encounter] → [Discovery] [Journey]
 
-</p>
-
 With the rules above and a starting input of `[Journey]`, Kybartas demonstrates that example quests such as `[Journey] [Encounter] [Discovery] [Journey] [Encounter]` or `[Journey] [Encounter] [Encounter] [Encounter]`can be generated. Kybartas then adds more specific actions and events to his grammar below.
-
-<p align="center">
 
 [Journey] → [go to town]
 
@@ -36,8 +30,6 @@ With the rules above and a starting input of `[Journey]`, Kybartas demonstrates 
 [Discovery] → [find gold]
 
 [Discovery] → [find weapon]
-
-</p>
 
 With a more specific grammar in place, the previously abstract side quests generated from the old grammar are transformed into more specific quests, such as `[go to town] [fight a goblin] [find gold] [go to the forest] [fight a dragon]`.
 
